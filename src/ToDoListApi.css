@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f99a54;
+  background-color: #f08080;
+}
+
+.toDo-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 60%;
+  margin: 40px auto;
+  border-radius: 12px;
+  background-color: #fbe4d8;
+  padding: 30px 0;
+  box-shadow: 5px 8px 20px;
+}
+
+.title-name {
+  text-align: center;
+  font-size: 45px;
+  background-color: #2a9d8f;
+  margin: 20px 0 0 0;
+  padding: 5px 0;
+  color: white;
+  /* background-color: #bb5098; */
+}
+
+.add-input-btn-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 30px;
+  /* gap: 40px; */
+  width: 100%;
+}
+
+.input-wrapper {
+  width: 80%;
+  /* text-align: center; */
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.add-btn {
+  width: 20%;
+}
+
+.input-wrapper input {
+  margin: 0 10px 0 0;
+  padding: 8px 15px;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  border-radius: 24px;
+  width: 40%;
+}
+
+.add-input-btn-wrapper button {
+  padding: 8px 25px;
+  font-size: 15px;
+  font-weight: 400;
+  border: none;
+  border-radius: 24px;
+  background-color: white;
+}
+
+.task-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 30px;
+  padding: 20px 30px;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  background-color: #2a9d8f;
+  /* width: 92.5%; */
+}
+
+.task-btn-wrapper {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 15px;
+  /* width: 8%; */
+}
+
+.icon {
+  font-size: 23px;
+  color: white;
+}
+.task-txt {
+  font-size: 20px;
+  padding: 4px 0;
+  color: white;
+  width: 100%;
+}
+.task-wrapper input {
+  margin: 0 10px 0 0;
+  padding: 7px 15px;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  border-radius: 24px;
+}
+
+@media (max-width: 768px) {
+  .add-input-btn-wrapper {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .input-wrapper {
+    width: 90%;
+  }
+  .input-wrapper input {
+    width: 100%;
+  }
+  .add-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 578px) {
+  .input-wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .title-name {
+    font-size: 30px;
+    margin: 15px 0 0 0;
+  }
+  .input-wrapper input {
+    font-size: 13px;
+  }
+  .add-input-btn-wrapper {
+    padding: 20px 20px;
+  }
+  .add-input-btn-wrapper button {
+    font-size: 13px;
+  }
+  .task-txt {
+    font-size: 16px;
+  }
+  .icon {
+    font-size: 18px;
+  }
+  .task-wrapper {
+    padding: 13px 20px;
+    margin: 8px 15px;
+  }
+  .task-btn-wrapper {
+    gap: 10px;
+  }
+}
